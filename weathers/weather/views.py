@@ -22,7 +22,6 @@ def index(request):
         #here we pass city value to c parameter
         r = requests.get(url.format(c=city)).json()
 
-        print('r...............', r)
 
         city_weather = {
             'city' : city.name,
